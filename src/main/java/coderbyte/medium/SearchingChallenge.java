@@ -1,5 +1,7 @@
 // Searching Challenge
-// Have the function SearchingChallenge(str) take the str parameter being passed and return the first word with the greatest number of repeated letters. For example: "Today, is the greatest day ever!" should return greatest because it has 2 e's (and 2 t's) and it comes before ever which also has 2 e's. If there are no words with repeating letters return -1. Words will be separated by spaces.
+// Have the function SearchingChallenge(str) take the str parameter being passed and return the first word with the greatest number of repeated letters.
+// For example: "Today, is the greatest day ever!" should return greatest because it has 2 e's (and 2 t's) and it comes before ever which also has 2 e's.
+// If there are no words with repeating letters return -1. Words will be separated by spaces.
 // Once your function is working, take the final output string and combine it with your ChallengeToken, both in reverse order and separated by a colon.
 
 // Your ChallengeToken: 19a4k7ogl65c
@@ -41,15 +43,14 @@ class SearchingChallenge {
             }
         }
         char ch;
-        String stringToReverse = words[maxWordNr];
+        String stringToReverse = words[maxWordNr] + ":c56lgo7k4a91";
         String tempString = "";
         for (int k = 0; k < stringToReverse.length(); k++)
         {
             ch = stringToReverse.charAt(k);
             tempString = ch + tempString;
         }
-        str = tempString + ":c56lgo7k4a91";
-        return str;
+        return tempString;
     }
 
     public static void main (String[] args) {
